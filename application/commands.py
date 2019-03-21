@@ -12,6 +12,7 @@ longitude = float('nan')
 def start(message):
     bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
 
+'''
 @bot.message_handler(commands=['cartelera'])
 def cartelera(message):
 
@@ -61,7 +62,7 @@ def parsear(url):
 			#print (hora.string)
 
 	return titulos_lista, infos_lista, horas_lista
-
+'''
 @bot.message_handler(func=lambda message: True, content_types=['text'])
 def echo_message(message):
     """
